@@ -1,0 +1,121 @@
+@media (max-width: 1400px) {
+    
+}
+@media (max-width: 1200px) {
+  .films__catalog{
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  .films__item{
+    width: 48%;
+  }
+  .films__item img{
+    width: 100%;
+  }
+  .collections__catalog{
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .collections__item{
+    max-width: none;
+    width: 70%;
+    min-height: 300px;
+  }
+  .collections__item::after{
+    background-size: 96% 90%;
+    
+  }
+}
+@media (max-width: 991px) {
+    .series__collection{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 250px;
+    }
+  
+}
+@media (max-width: 768px) {
+    .header__nav-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        padding-bottom: 30px;
+    }
+}
+@media (max-width: 576px) {
+    .films__item{
+        width: 80%;
+    }
+    .collections__item {
+        width: 90%;
+    }
+    .series__item:nth-of-type(1){
+        grid-column: span 2;
+    }
+    .footer__content{
+        flex-direction: column;
+    }
+    .footer__apps{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .collections__item {
+        min-height: 230px;
+    }
+    .widow__img{
+        width: 100%;
+    }
+}
+@media (max-width: 470px) {
+    .series__item{
+        grid-column: span 2;
+    }
+    .button {
+        padding: 17px 30px
+    }
+    .series__poster {
+        padding: 30px 10px;
+        text-align: center;
+    }
+    .series__poster-title{
+        font-size: 32px;
+    }
+    .collections__item {
+        min-height: 200px;
+    }
+    .intro__title{
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 15px;
+    }
+    .intro {
+        min-height: 450px;
+    }
+    .intro__text{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 360px) {
+    .header__nav-link {
+        margin: 0;
+    }
+    .button {
+        padding: 17px 20px
+    }
+    .footer__text{
+        text-align: center;
+    }
+    .series__poster-title{
+        margin-bottom: 15px;
+        line-height: 30px;
+    }
+    .series__poster-text{
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+    .collections__item{
+        min-height: 150px;
+    }
+}
